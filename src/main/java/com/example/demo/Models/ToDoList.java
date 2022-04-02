@@ -8,7 +8,9 @@ public class ToDoList {
         this.id = id;
         this.name = name;
     }
+    public ToDoList(){
 
+    }
     public long getId() {
         return id;
     }

@@ -18,12 +18,12 @@ public class ToDoListController {
     }
 
     @GetMapping("/List")
-    public List<List> getLists(){
+    public List<ToDoList> getLists(){
         return listService.getLists();
     }
 
     @PostMapping("/list/create")
     public long createBook(@RequestBody ToDoList ToDoListDto) {
-        return ToDoListService.createList(ToDoListDto);
+        return listService.createList(ToDoListDto);
     }
 }
